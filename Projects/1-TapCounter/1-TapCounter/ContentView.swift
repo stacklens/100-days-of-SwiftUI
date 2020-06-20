@@ -9,8 +9,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var count = 0
+    
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            VStack {
+                Text("\(count)")
+                    .font(Font.system(size: 80))
+                    .padding()
+                Button(action: { self.count += 1 }) {
+                    Text("Tap")
+                        .font(.largeTitle)
+                }
+            }
+            .navigationBarTitle("Tap Counter", displayMode: .inline)
+            .navigationBarItems(
+                leading:
+                Button("Reset") {
+                    self.count = 0
+                }
+            )
+        }
     }
 }
 
