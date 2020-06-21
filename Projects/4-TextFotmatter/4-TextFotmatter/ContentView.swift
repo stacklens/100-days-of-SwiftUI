@@ -21,10 +21,12 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Current DateTime:")
+                .kerning(5)
+                //.tracking(5)
             Text("\(date, formatter: Self.dateFormat)")
                 .font(Font.headline)
-            Button("Refresh") { self.date = Date() }
                 .padding()
+            Button("Refresh") { self.date = Date() }
                 .frame(width: 100, height: nil)
         }
     }
