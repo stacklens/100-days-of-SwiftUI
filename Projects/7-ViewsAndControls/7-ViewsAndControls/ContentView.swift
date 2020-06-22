@@ -11,14 +11,69 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            ToggleView()
+            Group {
+                ToggleView()
+                Divider()
+                ButtonView()
+                Divider()
+                //                SecureFieldView()
+                //                Divider()
+            }
+            
+            PickerView()
             Divider()
-            ButtonView()
+            SegmentPickerView()
             Divider()
-            SecureFieldView()
+            StepperView()
             Spacer()
         }
         
+    }
+}
+
+struct StepperView: View {
+    @State private var age = 18
+    
+    var body: some View {
+        VStack {
+            Stepper("Enter your age", value: $age, in: 0...130)
+            Text("Your age is \(age)").font(.headline)
+        }
+    }
+}
+
+struct SegmentPickerView: View {
+    @State private var favoriteColor = 0
+    var colors = ["Red", "Green", "Blue"]
+    
+    var body: some View {
+        VStack {
+            Picker(selection: $favoriteColor, label: Text("What is your favorite color?")) {
+                ForEach(0..<colors.count) { index in
+                    Text(self.colors[index]).tag(index)
+                }
+            }.pickerStyle(SegmentedPickerStyle())
+            
+            Text("Value: \(colors[favoriteColor])")
+        }
+    }
+}
+
+struct PickerView: View {
+    private var colors = ["Red", "Green", "Blue", "Orange"]
+    @State private var selectedColor = 0
+    
+    var body: some View {
+        VStack {
+            Picker("choose", selection: $selectedColor) {
+                ForEach(0..<colors.count) {
+                    Text(self.colors[$0])
+                }
+            }
+            .labelsHidden()
+            .padding(.trailing)
+            Text("You selected: \(colors[selectedColor])")
+        }
     }
 }
 
