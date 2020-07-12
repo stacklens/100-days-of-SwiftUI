@@ -5,25 +5,22 @@
 
 ## 100 Days of Swift 5
 
-**Some tiny projects to help you quickly learn how to build a simple iPhone app.**
+**十来个 SwiftUI 小项目，帮助入门者快速学习如何搭建声明式应用。**
 
-👉🏼 [中文传送门 / Chinese Version](README-CN.md) 👈🏼
+项目灵感来源于 [samvlu's 100-days-of-swift](http://samvlu.com/index.html)，并用 SwiftUI 重写。 部分资源来自 [Edison Hsu](https://github.com/Edison-Hsu/100-days-of-RxSwift)。
 
-Similar with [samvlu's 100-days-of-swift](http://samvlu.com/index.html),  but write by SwiftUI. Some resource comes from [Edison Hsu](https://github.com/Edison-Hsu/100-days-of-RxSwift).
-
-Code environment:
+开发环境：
 
 - Swift 5
 - Xcode 11.5
 - Simulator iPhone 11 Pro
 
-These projects does not include an explanation of the basics of SwiftUI. If you do not understand how the code works, please learn the following tutorial first:
+注意，项目并不包含对 Swift 基础知识的讲解。如果你完全搞不清楚它们是如何实现的，请先学习以下内容：
 
-- [The Swift Programming Language](https://swift.org/)
-- [Stanford CS193P Developing Applications for iOS](https://cs193p.sites.stanford.edu/)
+- [Swift 编程语言中文版](https://www.cnswift.org/)
+- [斯坦福 CS193P Swift 公开课](https://cs193p.sites.stanford.edu/)
 
-**Happy programming!**
-
+**祝编程愉快！**
 
 ### Project 1 - Tap Counter
 
