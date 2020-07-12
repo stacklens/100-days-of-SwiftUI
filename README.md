@@ -1,7 +1,6 @@
 [![](https://img.shields.io/badge/Swift-5.0-orange)](https://swift.org/)
-[![](https://img.shields.io/badge/Xcode-11.3.1-blue)](https://swift.org/)
-[![](https://img.shields.io/badge/Simulator-iPhone11-green)](https://swift.org/)
-[![](https://img.shields.io/badge/Simulator-iPhone11-blueviolet)](https://swift.org/)
+[![](https://img.shields.io/badge/Xcode-11.5-blue)](https://swift.org/)
+[![](https://img.shields.io/badge/Simulator-iPhone11Pro-green)](https://swift.org/)
 
 ## 100 Days of Swift 5
 
