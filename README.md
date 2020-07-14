@@ -71,3 +71,7 @@ These projects does not include an explanation of the basics of SwiftUI. If you 
 ### Project 12 - Add New Item
 
 ![gif](GIF/p12.gif)
+
+### Project 13 - Basic List
+
+![gif](GIF/p13.gif)
