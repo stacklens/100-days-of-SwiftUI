@@ -9,20 +9,49 @@
 import SwiftUI
 
 struct ListView: View {
-    @EnvironmentObject var model: FriendsViewModel
+    @EnvironmentObject var viewModel: FriendsViewModel
+    
+    @State private var editMode: EditMode = .inactive
 
     var body: some View {
         NavigationView {
             List {
-                ForEach(self.model.friends) { friend in
-                    NavigationLink(destination: DetailView(id: friend.id)) {
-                        HStack {
-                            Image(friend.avatar ?? "avatar02").circllify
-                            Text(friend.name ?? "none")
+                Section(header: Text("Recent")) {
+                    ForEach(self.viewModel.recentFriends) { friend in
+                        NavigationLink(destination: DetailView(id: friend.id)) {
+                            HStack {
+                                Image(friend.avatar ?? "avatar02").circllify
+                                Text(friend.name ?? "none")
+                            }
                         }
                     }
+                        .onDelete { indexSet in
+                            indexSet.map{ self.viewModel.recentFriends[$0] }.forEach { friend in
+                                self.viewModel.remove(friend)
+                            }
+                        }
                 }
-            }.navigationBarTitle("Friends")
+                
+                Section(header: Text("Friends")) {
+                    ForEach(self.viewModel.otherFriends) { friend in
+                        NavigationLink(destination: DetailView(id: friend.id)) {
+                            HStack {
+                                Image(friend.avatar ?? "avatar02").circllify
+                                Text(friend.name ?? "none")
+                            }
+                        }
+                    }
+                        .onDelete { indexSet in
+                            indexSet.map{ self.viewModel.otherFriends[$0] }.forEach { friend in
+                                self.viewModel.remove(friend)
+                            }
+                        }
+                }
+
+            }
+                .navigationBarTitle("Friends")
+                .navigationBarItems(leading: EditButton())
+                .environment(\.editMode, $editMode)
         }
     }
 }

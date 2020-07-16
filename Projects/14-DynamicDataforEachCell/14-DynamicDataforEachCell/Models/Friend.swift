@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Friend: Codable, Identifiable {
+struct Friend: Codable, Identifiable, Equatable {
     let id = UUID()
     
     var index: Int?
@@ -18,4 +18,8 @@ struct Friend: Codable, Identifiable {
     var mobile: String?
     var email: String?
     var notes: String?
+    
+    mutating func changeName(_ newName: String) {
+        self.name = newName
+    }
 }

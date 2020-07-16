@@ -9,7 +9,6 @@
 import Foundation
 
 struct Friends: Codable {
-
     // Get Data file path (in document dir).
     static var documentFileURL: URL? {
         if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {

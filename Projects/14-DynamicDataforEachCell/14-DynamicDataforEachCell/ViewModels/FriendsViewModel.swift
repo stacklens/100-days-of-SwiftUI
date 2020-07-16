@@ -9,5 +9,28 @@
 import Foundation
 
 class FriendsViewModel: ObservableObject {
-    @Published var friends = Friends.allFriends(in: "dict") ?? []
+    @Published var model = FriendsModel()
+    
+    // MARK: - Access to the Model
+    var friends: [Friend] {
+        model.friends
+    }
+    
+    var recentFriends: [Friend] {
+        model.recentFriends
+    }
+    
+    var otherFriends: [Friend] {
+        model.otherFriends
+    }
+    
+    // MARK: - Intent(s)
+    func change(_ value: String, keyPath: WritableKeyPath<Friend, String>, atIndex index: Int) {
+        model.change(value, keyPath: keyPath, atIndex: index)
+    }
+    
+    func remove(_ friend: Friend) {
+        model.remove(friend)
+    }
+    
 }

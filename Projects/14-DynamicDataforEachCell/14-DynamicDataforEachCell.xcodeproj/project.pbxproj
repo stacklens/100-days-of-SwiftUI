@@ -20,6 +20,10 @@
 		494CF84024BDE3D900CEA2F8 /* FriendsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494CF83F24BDE3D900CEA2F8 /* FriendsViewModel.swift */; };
 		494CF84224BDE92B00CEA2F8 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494CF84124BDE92B00CEA2F8 /* DetailView.swift */; };
 		494CF84724BDEA8C00CEA2F8 /* Circllify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494CF84624BDEA8C00CEA2F8 /* Circllify.swift */; };
+		494CF84A24C0303100CEA2F8 /* EditableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494CF84924C0303100CEA2F8 /* EditableText.swift */; };
+		494CF84D24C03B0D00CEA2F8 /* FriendsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494CF84C24C03B0D00CEA2F8 /* FriendsModel.swift */; };
+		494CF84F24C06BF600CEA2F8 /* headify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494CF84E24C06BF600CEA2F8 /* headify.swift */; };
+		494CF85124C06CCF00CEA2F8 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494CF85024C06CCF00CEA2F8 /* TitleText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		494CF83F24BDE3D900CEA2F8 /* FriendsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewModel.swift; sourceTree = "<group>"; };
 		494CF84124BDE92B00CEA2F8 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		494CF84624BDEA8C00CEA2F8 /* Circllify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circllify.swift; sourceTree = "<group>"; };
+		494CF84924C0303100CEA2F8 /* EditableText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditableText.swift; sourceTree = "<group>"; };
+		494CF84C24C03B0D00CEA2F8 /* FriendsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsModel.swift; sourceTree = "<group>"; };
+		494CF84E24C06BF600CEA2F8 /* headify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = headify.swift; sourceTree = "<group>"; };
+		494CF85024C06CCF00CEA2F8 /* TitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,7 @@
 			children = (
 				494CF82324BD9D1D00CEA2F8 /* AppDelegate.swift */,
 				494CF82524BD9D1D00CEA2F8 /* SceneDelegate.swift */,
+				494CF84B24C0303900CEA2F8 /* Utils */,
 				494CF84424BDEA3000CEA2F8 /* Models */,
 				494CF84524BDEA3900CEA2F8 /* ViewModels */,
 				494CF84324BDEA2400CEA2F8 /* Views */,
@@ -108,6 +117,7 @@
 			children = (
 				494CF83B24BD9ECD00CEA2F8 /* Friend.swift */,
 				494CF83D24BD9EF000CEA2F8 /* Friends.swift */,
+				494CF84C24C03B0D00CEA2F8 /* FriendsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -124,8 +134,18 @@
 			isa = PBXGroup;
 			children = (
 				494CF84624BDEA8C00CEA2F8 /* Circllify.swift */,
+				494CF84E24C06BF600CEA2F8 /* headify.swift */,
 			);
 			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		494CF84B24C0303900CEA2F8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				494CF84924C0303100CEA2F8 /* EditableText.swift */,
+				494CF85024C06CCF00CEA2F8 /* TitleText.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,13 +222,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				494CF82424BD9D1D00CEA2F8 /* AppDelegate.swift in Sources */,
+				494CF85124C06CCF00CEA2F8 /* TitleText.swift in Sources */,
 				494CF82624BD9D1D00CEA2F8 /* SceneDelegate.swift in Sources */,
 				494CF84024BDE3D900CEA2F8 /* FriendsViewModel.swift in Sources */,
 				494CF84724BDEA8C00CEA2F8 /* Circllify.swift in Sources */,
 				494CF84224BDE92B00CEA2F8 /* DetailView.swift in Sources */,
 				494CF82824BD9D1D00CEA2F8 /* ListView.swift in Sources */,
 				494CF83E24BD9EF000CEA2F8 /* Friends.swift in Sources */,
+				494CF84F24C06BF600CEA2F8 /* headify.swift in Sources */,
+				494CF84A24C0303100CEA2F8 /* EditableText.swift in Sources */,
 				494CF83C24BD9ECD00CEA2F8 /* Friend.swift in Sources */,
+				494CF84D24C03B0D00CEA2F8 /* FriendsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
