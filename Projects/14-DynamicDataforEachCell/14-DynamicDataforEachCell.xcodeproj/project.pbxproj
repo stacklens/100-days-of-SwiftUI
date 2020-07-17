@@ -24,6 +24,7 @@
 		494CF84D24C03B0D00CEA2F8 /* FriendsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494CF84C24C03B0D00CEA2F8 /* FriendsModel.swift */; };
 		494CF84F24C06BF600CEA2F8 /* headify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494CF84E24C06BF600CEA2F8 /* headify.swift */; };
 		494CF85124C06CCF00CEA2F8 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494CF85024C06CCF00CEA2F8 /* TitleText.swift */; };
+		494CF85324C1348400CEA2F8 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494CF85224C1348400CEA2F8 /* CreateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		494CF84C24C03B0D00CEA2F8 /* FriendsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsModel.swift; sourceTree = "<group>"; };
 		494CF84E24C06BF600CEA2F8 /* headify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = headify.swift; sourceTree = "<group>"; };
 		494CF85024C06CCF00CEA2F8 /* TitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
+		494CF85224C1348400CEA2F8 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			children = (
 				494CF82724BD9D1D00CEA2F8 /* ListView.swift */,
 				494CF84124BDE92B00CEA2F8 /* DetailView.swift */,
+				494CF85224C1348400CEA2F8 /* CreateView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				494CF84224BDE92B00CEA2F8 /* DetailView.swift in Sources */,
 				494CF82824BD9D1D00CEA2F8 /* ListView.swift in Sources */,
 				494CF83E24BD9EF000CEA2F8 /* Friends.swift in Sources */,
+				494CF85324C1348400CEA2F8 /* CreateView.swift in Sources */,
 				494CF84F24C06BF600CEA2F8 /* headify.swift in Sources */,
 				494CF84A24C0303100CEA2F8 /* EditableText.swift in Sources */,
 				494CF83C24BD9ECD00CEA2F8 /* Friend.swift in Sources */,

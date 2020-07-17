@@ -12,6 +12,8 @@ struct ListView: View {
     @EnvironmentObject var viewModel: FriendsViewModel
     
     @State private var editMode: EditMode = .inactive
+    
+    @State private var showingCreate = false
 
     var body: some View {
         NavigationView {
@@ -50,7 +52,19 @@ struct ListView: View {
 
             }
                 .navigationBarTitle("Friends")
-                .navigationBarItems(leading: EditButton())
+                .navigationBarItems(
+                    leading: EditButton(),
+                    trailing: Button(action: {
+                        self.showingCreate.toggle()
+                    })
+                    {
+                        Image(systemName: "plus")
+                    }
+                    .sheet(isPresented: $showingCreate) {
+                        CreateView()
+                    }
+                )
+            
                 .environment(\.editMode, $editMode)
         }
     }

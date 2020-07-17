@@ -75,3 +75,4 @@ These projects does not include an explanation of the basics of SwiftUI. If you 
 ### Project 13 - Basic List
 
 ![gif](GIF/p13.gif)
+
