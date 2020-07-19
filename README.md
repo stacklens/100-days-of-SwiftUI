@@ -79,3 +79,7 @@ These projects does not include an explanation of the basics of SwiftUI. If you 
 ### Project 14 - Dynamkc Data for Each Cell
 
 ![gif](GIF/p14.gif)
+
+### Project 15 - Picker
+
+![gif](GIF/p15.gif)
