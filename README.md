@@ -76,3 +76,6 @@ These projects does not include an explanation of the basics of SwiftUI. If you 
 
 ![gif](GIF/p13.gif)
 
+### Project 14 - Dynamkc Data for Each Cell
+
+![gif](GIF/p14.gif)

@@ -72,3 +72,7 @@
 ### Project 13 - Basic List
 
 ![gif](GIF/p13.gif)
+
+### Project 14 - Dynamkc Data for Each Cell
+
+![gif](GIF/p14.gif)

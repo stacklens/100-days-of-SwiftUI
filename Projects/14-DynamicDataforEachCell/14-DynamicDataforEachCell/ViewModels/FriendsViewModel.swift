@@ -33,4 +33,7 @@ class FriendsViewModel: ObservableObject {
         model.remove(friend)
     }
     
+    func add(_ friend: Friend) {
+        model.add(friend)
+    }
 }

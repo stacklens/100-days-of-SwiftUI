@@ -30,4 +30,8 @@ struct FriendsModel {
     mutating func remove(_ friend: Friend) {
         friends.removeAll(where: { $0 == friend })
     }
+    
+    mutating func add(_ friend: Friend) {
+        friends.insert(friend, at: 0)
+    }
 }

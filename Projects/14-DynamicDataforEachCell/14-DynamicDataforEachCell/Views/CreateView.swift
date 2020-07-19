@@ -9,7 +9,11 @@
 import SwiftUI
 
 struct CreateView: View {
-    private var newFriend = Friend()
+    @EnvironmentObject var viewModel: FriendsViewModel
+    
+    @Binding var showingCreate: Bool
+
+
     @State private var name = ""
     @State private var email = ""
     @State private var mobile = ""
@@ -23,8 +27,7 @@ struct CreateView: View {
                     Text("Palette Editor").font(.headline).padding()
                     HStack {
                         Spacer()
-                        Button(action: {
-                        }, label: { Text("Done") }).padding()
+                        DoneButton.padding()
                     }
                 }
                 
@@ -43,16 +46,20 @@ struct CreateView: View {
 
                 
             }
-//            .navigationBarTitle("Create")
-//            .navigationBarItems(leading: cancel, trailing: done)
-            
-        
-
     }
     
-    var done: some View {
+    var DoneButton: some View {
         Button("Done") {
-            
+            self.viewModel.add(
+                Friend(
+                    name: self.name,
+                    avatar: "avatar\(String(format: "%02d", 12.arc4random + 1))",
+                    mobile: self.mobile,
+                    email: self.email,
+                    notes: self.notes
+                )
+            )
+            self.showingCreate.toggle()
         }
     }
     
@@ -63,8 +70,21 @@ struct CreateView: View {
     }
 }
 
+extension Int {
+    /// 0 ~ self 的随机数，上开下闭区间
+    var arc4random: Int {
+        if self > 0 {
+            return Int(arc4random_uniform(UInt32(self)))
+        } else if self < 0 {
+            return -Int(arc4random_uniform(UInt32(self)))
+        } else {
+            return 0
+        }
+    }
+}
+
 struct CreateView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateView()
+        CreateView(showingCreate: Binding.constant(true))
     }
 }

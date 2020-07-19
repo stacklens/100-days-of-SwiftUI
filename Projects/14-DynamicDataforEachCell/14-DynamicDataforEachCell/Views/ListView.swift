@@ -58,13 +58,13 @@ struct ListView: View {
                         self.showingCreate.toggle()
                     })
                     {
+                        
                         Image(systemName: "plus")
                     }
                     .sheet(isPresented: $showingCreate) {
-                        CreateView()
+                        CreateView(showingCreate: self.$showingCreate).environmentObject(self.viewModel)
                     }
                 )
-            
                 .environment(\.editMode, $editMode)
         }
     }
