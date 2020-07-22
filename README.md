@@ -83,3 +83,7 @@ These projects does not include an explanation of the basics of SwiftUI. If you 
 ### Project 15 - Picker
 
 ![gif](GIF/p15.gif)
+
+### Project 16 - CoreDate
+
+![gif](GIF/p16.gif)

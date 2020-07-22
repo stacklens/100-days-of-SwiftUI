@@ -80,3 +80,7 @@
 ### Project 15 - Picker
 
 ![gif](GIF/p15.gif)
+
+### Project 16 - CoreDate
+
+![gif](GIF/p16.gif)
